@@ -2,7 +2,7 @@
 <addons>
   <addon id="service.bleeper.tv"
          name="BleeperTV Edits"
-         version="1.0.1"
+         version="1.0.2"
          provider-name="BleeperTV">
     <requires>
       <import addon="xbmc.python" version="3.0.1"/>
