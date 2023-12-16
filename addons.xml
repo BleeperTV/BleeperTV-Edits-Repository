@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+  <addon id="service.bleeper.tv"
+         name="BleeperTV Edits"
+         version="1.0.1"
+         provider-name="BleeperTV">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="default.py" />
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+      <summary>Download and apply edits from BleeperTV</summary>
+      <description lang="en">Download and apply edits from BleeperTV</description>
+      <disclaimer>BleeperTV</disclaimer>
+    <news>
+    </news>
+      <platform>all</platform>
+    <language></language>
+      <license></license>
+      <forum></forum>
+      <website>http://bleeper.tv</website>
+      <email></email>                                               
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>icon.png</fanart>         
+    </assets>
+    </extension>
+  </addon>
   <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.9">
     <extension point="xbmc.addon.repository" name="SlyGuy Repository">
       <dir>
